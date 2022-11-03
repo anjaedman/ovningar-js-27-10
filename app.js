@@ -585,7 +585,6 @@
 // const user = { 
 //     names: 'Sam', 
 //     cartValues: [19, 120, 200] 
-    
 // } 
 
 // function totalNumbers(number) {
@@ -620,18 +619,36 @@ const user = {
           } 
       ] 
   }   
-  function totalNumbers(number) {
-        let total =0;
-        for (let index = 0; index < user.cart.amount.length, user.cart.price.length; index++) {
-            // total += number[i];
+ 
+  let totalAmount = 0
 
-            total += user.cart.price, user.cart.price[index];
-        }
-        return total;
-         }
-       
-  console.log(totalNumbers(user.cart.amount * user.cart.price));
+ for (let index = 0; index < user.cart.length; index++) {
+  const item = user.cart[index];
+  const total = item.price * item.amount
+  console.log(item.name + ": " + total);
+  totalAmount = totalAmount + total;
+ }
 
+console.log( totalAmount); 
+
+
+
+
+
+
+
+
+
+
+//  function totalNumbers(number) {
+//         let total =0;
+//         for (let index = 0; index < user.cart.amount.length, user.cart.price.length; index++) {
+//             // total += number[i];
+
+//             total += user.cart.price, user.cart.price[index];
+//         }
+//         return total;
+//          }
 
 
 // let x = myFunction(4, 3);   // Function is called, return value will end up in x
