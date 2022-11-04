@@ -608,97 +608,34 @@
 // 
 // 3.4
 
-const user = { 
-      name: 'Sam', 
-      cart: [
-           { name: 'Tangentbord', price: 199, amount: 1 
-          },
-          { name: 'USB-mus', price: 249, amount: 2 
-          }, 
-          {  name: 'Webbkamera', price: 399, amount: 1 
-          } 
-      ] 
-  }   
- 
-  let totalAmount = 0
-
- for (let index = 0; index < user.cart.length; index++) {
-  const item = user.cart[index];
-  const total = item.price * item.amount
-  console.log(item.name + ": " + total);
-  totalAmount = totalAmount + total;
- }
-
-console.log( totalAmount); 
-
-
-
-
-
-
-
-
-
-
-//  function totalNumbers(number) {
-//         let total =0;
-//         for (let index = 0; index < user.cart.amount.length, user.cart.price.length; index++) {
-//             // total += number[i];
-
-//             total += user.cart.price, user.cart.price[index];
-//         }
-//         return total;
-//          }
-
-
-// let x = myFunction(4, 3);   // Function is called, return value will end up in x
-
-// function myFunction(a, b) {
-//   return a * b;             // Function returns the product of a and b
-// }
-// console.log( x );
-
 // const user = { 
-//     name: 'Sam', 
-//     cart: [
-//          { name: 'Tangentbord', price: 199, amount: 1 
-//         },
-//         { name: 'USB-mus', price: 249, amount: 2 
-//         }, 
-//         {  name: 'Webbkamera', price: 399, amount: 1 
-//         } 
-//     ] 
-// }   
+//       name: 'Sam', 
+//       cart: [
+//            { name: 'Tangentbord', price: 199, amount: 1 
+//           },
+//           { name: 'USB-mus', price: 249, amount: 2 
+//           }, 
+//           {  name: 'Webbkamera', price: 399, amount: 1 
+//           } 
+//       ] 
+//   }   
+ 
+//   let totalAmount = 0
 
-//     function totalNumbers(number) {
-//         let total = 0;
-//         for (let i = 0; i < number.length; i++) {
-//         total += number[i];
-//         }
-//         return total;
-//       }
+//  for (let index = 0; index < user.cart.length; index++) {
+//   const item = user.cart[index];
+//   const total = item.price * item.amount
+//   console.log(item.name + ": " + total);
+//   totalAmount = totalAmount + total;
+//  }
 
-
-
-
-    //   function totalNumbers(number) {
-    //     let total =0;
-    //     for (let index = 0; index < user.cart.length; index++) {
-    //         // total += number[i];
-
-    //         total += user.cart[amount * price];
-    //     }
-    //     return total;
-    //      }
-       
+// console.log( totalAmount); 
 
 
-        // return this.user.cart.price + " " + (this.user.cart.price);}
-    
-      // function smartTotal(newNumber) {
-      //   return newNumber.reduce((total, number) => total + number, 0);
-      // }
-    
-    // console.log(totalNumbers(user.cart.price));
-    // console.log(smartTotal(user.cart.price));
-    
+
+
+
+
+
+
+
