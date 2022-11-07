@@ -123,19 +123,44 @@
 
 
 //  4.6
+let arrayOfFruits = ["Äpple", "Päron", "Banan"];
 
-const arrayOfFruits = ["äpple", "päron", "banan",];
+// let shortMap = arrayOfFruits;
 
-function shortMap(arrayOfFruits[index]) {
+let shortMap = [];
 
-
+function shortMap2 () { 
+    for (let i = 0; i < arrayOfFruits.length; i++) {
+        shortMap[i] = arrayOfFruits[i].substring(0,3)
+    }
 }
 
-
-// let ordString = "Hejsan";
-// let result = ordString.substring(0, 3);
-
-// console.log(result);
+console.log("arrayoffruits", arrayOfFruits);
+// console.log("shortmap", shortMap);
+console.log("shortmap2", shortMap2);
 
 
+// let arrayOfFruits = ["River", "Lake", "Pond", "Sea"];
 
+// let shortMap = [];
+
+// for (let i = 0; i < arrayOfFruits.length; i++) {
+
+//     shortMap[i] = arrayOfFruits[i].substring(0,3);
+
+// }
+
+// console.log(shortMap);
+
+
+// 4.7
+
+// const arrayOfFruits = ['äpple', 'päron', 'banan', 'grapefrukt', 'vindruva', 'lime'];
+
+// function shortFilter(arrayOfFruits) {
+
+
+// }
+
+// console.log("arrayoffruits", arrayOfFruits);
+// console.log("shortfilter" shortFilter);
