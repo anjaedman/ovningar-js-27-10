@@ -200,57 +200,42 @@
 
 
 
-// 4.7 Skriv en funktion med namnet "shortFilter". 
-// Den ska ta en array med strängar och returnera en ny array. 
-// Den nya arrayen ska innehålla alla strängar från den gamla som är kortare än 7 tecken. 
-// Exempel array: ['äpple', 'päron', 'banan', 'grapefrukt', 'vindruva' 'lime'] 
-// (Grapefrukt och vindruva är för långa och ska inte vara med i den nya arrayen.)
+// 4.7 
 
 
-const fruits = ['äpple', 'päron', 'banan', 'grapefrukt', 'vindruva', 'lime'];
+// Joakim hjälpte med push funktionen
 
-console.log("fruits::", fruits);
+// const fruits = ['äpple', 'päron', 'banan', 'grapefrukt', 'vindruva', 'lime'];
 
-const ihop = shortFilter(fruits);
+// // console.log("fruits::", fruits);
 
-function shortFilter(fruits) {
-    const tempArray = []
-    for (let index = 0; index < fruits.length; index++) {
-        const element = fruits[index];
-        tempArray.push(`${element}` .match(>= 7)) 
-    }
-    return tempArray
-}
+// const ihop = shortFilter(fruits);
 
-console.log("ihop::", ihop);
+// function shortFilter(fruits) {
+//     const tempArray = []
+//     for (let index = 0; index < fruits.length; index++) {
+//         const element = fruits[index];
+//         if ((`${element}`.length >= 7) ) {
+//             tempArray.push(element)
+//         }
+//         else{
+//             tempArray.push(" ej över 7")
+//         }
+//         // console.log(element.length);
+//     }
+//     return tempArray
+// }
+// console.log("ihop::", ihop);
 
 
 
+// Anjas Bästa förslag;
 
 
 // const fruits = ['äpple', 'päron', 'banan', 'grapefrukt', 'vindruva', 'lime'];
 
-// const modifiedArray = shortFilter(fruits);  
+// const shortFilter = fruits.filter(fruits => fruits.length > 7);
 
-// function shortFilter () {
-//     const tempArray =[]
-//     for (let index = 0; index < fruits.length; index++) {
-//         const element = fruits[index];
-//         tempArray.push(`${element}`.filter( >= 7 ))
-    
-//     }   
-//      return tempArray
-// }
-
-// console.log(modifiedArray);   
+// console.log(shortFilter);
 
 
-
-// function shortFilter(arr){
-//     const tempArray = []
-//     for (let index = 0; index < arr.length; index++) {
-//         const element = arr[index];
-//         tempArray.push(`${element}`.substring(0, 3)) 
-//     }
-//     return element >= 7;
-// }
